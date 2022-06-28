@@ -1,15 +1,3 @@
-# ServerChanMSG
-
-## 简介
-
-基于ServerChan的消息推送
-
-### 功能单
-
-| 功能        | 描述                         | 路径                         |
-| ----------- | ---------------------------- | ---------------------------- |
-| B站直播订阅 | 跟踪直播状态, 开播时进行推送 | ./livewatcher/livewatcher.py |
-|直播订阅-函数计算|用于阿里云函数计算的直播监听, 支持b站/ytb|./livewatcher-ali/livewatcher-ali|
-
-上述功能基于ServerChan实现消息推送, 如果使用hoshino作为qq bot, 可以使用[该项目](https://github.com/voidbean/livewatcher)
-
+该文件用于阿里云的函数计算
+在阿里云官网申请函数计算功能, 然后创建python3的函数后将该文件内容直接拷入， 同时点击触发器页签，增加定时任务即可
+代码中需要修改的地方为在sc.ftqq.com申请到的key, 还有需要监听的主播的uid, 其余可根据自身需求改动
